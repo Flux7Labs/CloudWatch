@@ -97,6 +97,11 @@
     <td id="vaservicename"></td>
     <td class="awsregion" id="va"><label/></td>
     </tr>
+    <tr>
+    <td>Ohio</td>
+    <td id="ohservicename"></td>
+    <td class="awsregion" id="oh"><label/></td>
+    </tr>
      <tr>
     <td>Oregon</td>
      <td id="ogservicename"><label/></td>
@@ -216,6 +221,7 @@
 
           ec2 : {
                    va: "ec2.us-east-1.amazonaws.com",
+                   oh: "ec2.us-east-2.amazonaws.com", 
                    ca: "ec2.us-west-1.amazonaws.com",
                    sgp: "ec2.ap-southeast-1.amazonaws.com",
                    og: "ec2.us-west-2.amazonaws.com",
@@ -228,6 +234,7 @@
 
           sqs : {
                    va: "sqs.us-east-1.amazonaws.com",
+                   oh: "sqs.us-east-2.amazonaws.com",
                    ca: "sqs.us-west-1.amazonaws.com",
                    sgp: "sqs.ap-southeast-1.amazonaws.com",
                    og: "sqs.us-west-2.amazonaws.com",
@@ -241,6 +248,7 @@
 
           sdb : {
                    va: "sdb.amazonaws.com",
+                   oh: "NA",
                    ca: "sdb.us-west-1.amazonaws.com",
                    sgp: "sdb.ap-southeast-1.amazonaws.com",
                    og: "sdb.us-west-2.amazonaws.com",
@@ -254,6 +262,7 @@
 
           sns : {
                    va: "sns.us-east-1.amazonaws.com",
+                   oh: "sns.us-east-2.amazonaws.com",
                    ca: "sns.us-west-1.amazonaws.com",
                    sgp: "sns.ap-southeast-1.amazonaws.com",
                    og: "sns.us-west-2.amazonaws.com",
@@ -289,7 +298,6 @@
                   }
 
           },
-
           executeAPIRequest : function(endpoint, onComplete) {
 
                   var apirequest = $("#awsapirequest");
